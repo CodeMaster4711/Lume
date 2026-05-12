@@ -1,33 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="100%" style="stop-color:#16213e"/>
+      <stop offset="0%" style="stop-color:#1c1c1c"/>
+      <stop offset="100%" style="stop-color:#141414"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e2c27d"/>
-      <stop offset="100%" style="stop-color:#c9a84c"/>
+    <linearGradient id="lime" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a3e635"/>
+      <stop offset="100%" style="stop-color:#65a30d"/>
     </linearGradient>
   </defs>
 
-  <!-- Background rounded rect -->
-  <rect width="512" height="512" rx="100" fill="url(#bg)"/>
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bg)"/>
 
   <!-- Camera body -->
-  <rect x="96" y="176" width="320" height="220" rx="32" fill="none" stroke="url(#accent)" stroke-width="22"/>
+  <rect x="80" y="170" width="352" height="230" rx="36" fill="url(#lime)"/>
 
-  <!-- Camera notch top -->
-  <path d="M196 176 L216 136 Q220 124 232 124 L280 124 Q292 124 296 136 L316 176Z" fill="url(#accent)"/>
+  <!-- Camera notch -->
+  <path d="M188 170 L210 130 Q215 118 228 118 L284 118 Q297 118 302 130 L324 170Z" fill="url(#lime)"/>
 
-  <!-- Lens outer -->
-  <circle cx="256" cy="290" r="72" fill="none" stroke="url(#accent)" stroke-width="20"/>
+  <!-- Shutter button -->
+  <circle cx="390" cy="145" r="18" fill="url(#lime)"/>
 
-  <!-- Lens inner -->
-  <circle cx="256" cy="290" r="38" fill="url(#accent)" opacity="0.85"/>
+  <!-- Lens ring outer -->
+  <circle cx="256" cy="290" r="82" fill="#1c1c1c"/>
+  <circle cx="256" cy="290" r="70" fill="url(#lime)"/>
+  <circle cx="256" cy="290" r="58" fill="#1c1c1c"/>
 
-  <!-- L letter -->
-  <text x="256" y="308" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#1a1a2e" text-anchor="middle">L</text>
-
-  <!-- Shutter dot top right -->
-  <circle cx="366" cy="212" r="14" fill="url(#accent)"/>
+  <!-- Document icon inside lens (cyan/teal like original) -->
+  <!-- doc body -->
+  <rect x="234" y="256" width="44" height="52" rx="4" fill="#38bdf8"/>
+  <!-- folded corner -->
+  <path d="M266 256 L278 268 L266 268Z" fill="#0ea5e9"/>
+  <rect x="266" y="256" width="12" height="12" rx="0" fill="#1c1c1c" opacity="0.3"/>
+  <!-- doc lines -->
+  <line x1="240" y1="276" x2="270" y2="276" stroke="#1c1c1c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="240" y1="284" x2="270" y2="284" stroke="#1c1c1c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="240" y1="292" x2="260" y2="292" stroke="#1c1c1c" stroke-width="3" stroke-linecap="round"/>
 </svg>
