@@ -15,7 +15,8 @@
   "dependencies": {
     "@lucide/svelte": "^1.14.0",
     "@tauri-apps/api": "^2",
-    "@tauri-apps/plugin-opener": "^2"
+    "@tauri-apps/plugin-opener": "^2",
+    "tesseract.js": "^7.0.0"
   },
   "devDependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.2.8",

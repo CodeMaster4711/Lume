@@ -1,7 +1,40 @@
-# Tauri + SvelteKit + TypeScript
+# Lume
 
-This template should help get you started developing with Tauri, SvelteKit and TypeScript in Vite.
+<p align="center">
+  <img src="logo.svg" width="120" alt="Lume Logo"/>
+</p>
 
-## Recommended IDE Setup
+<p align="center">
+  Screenshot → Text. Bildschirm aufnehmen oder Bild hochladen, OCR läuft lokal.
+</p>
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+---
+
+## Features
+
+- Bildschirmbereich auswählen & aufnehmen
+- Bild hochladen (PNG, JPG, ...)
+- OCR mit Tesseract.js (Deutsch + Englisch, lokal, kein Server)
+- Text kopieren
+
+## Dev
+
+```bash
+npm install
+npm run tauri dev
+```
+
+## Build
+
+```bash
+npm run tauri build
+```
+
+Output: `src-tauri/target/release/bundle/`
+
+## Stack
+
+- [Tauri 2](https://tauri.app) — native Shell
+- [SvelteKit](https://kit.svelte.dev) — Frontend
+- [Tesseract.js](https://tesseract.projectnaptha.com) — OCR Engine
+- [shadcn-svelte](https://www.shadcn-svelte.com) — UI
